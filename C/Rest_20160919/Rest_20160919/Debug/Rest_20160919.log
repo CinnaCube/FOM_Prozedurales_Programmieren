@@ -1,0 +1,6 @@
+﻿  Rest_20160919.cpp
+d:\dev\fom\c\rest_20160919\rest_20160919\rest_20160919.cpp(14): error C2297: "%": Ungültig, da der rechte Operand vom Typ "float" ist
+d:\dev\fom\c\rest_20160919\rest_20160919\rest_20160919.cpp(12): warning C4477: "scanf_s": Die Formatzeichenfolge "%i" erfordert ein Argument vom Typ "int *", das variadic-Argument "1" weist aber den Typ "float *" auf.
+d:\dev\fom\c\rest_20160919\rest_20160919\rest_20160919.cpp(14): warning C4473: "printf": nicht genügend Argumente für Formatzeichenfolge übergeben
+  d:\dev\fom\c\rest_20160919\rest_20160919\rest_20160919.cpp(14): note: Platzhalter und deren Parameter erwarten 3 variadic-Argumente, es wurden aber 0 variadic-Argumente bereitgestellt.
+  d:\dev\fom\c\rest_20160919\rest_20160919\rest_20160919.cpp(14): note: Das fehlende variadic-Argument "1" ist für die Zeichenfolge "%f" erforderlich.

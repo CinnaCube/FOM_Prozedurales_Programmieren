@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+d:\google drive\studium\konzepte des prozeduralen programmierens\programme\fom_prozedurales_programmieren\20160910\consoleapplication1\consoleapplication1\consoleapplication1.cpp(11): warning C4305: "Initialisierung": Verkürzung von "double" in "float"
+  ConsoleApplication1.vcxproj -> D:\Google Drive\Studium\Konzepte des prozeduralen Programmierens\Programme\FOM_Prozedurales_Programmieren\20160910\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> D:\Google Drive\Studium\Konzepte des prozeduralen Programmierens\Programme\FOM_Prozedurales_Programmieren\20160910\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Full PDB)

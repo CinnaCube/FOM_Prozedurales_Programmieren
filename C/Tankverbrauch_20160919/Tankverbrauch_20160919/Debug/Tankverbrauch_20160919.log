@@ -1,0 +1,6 @@
+﻿  Tankverbrauch_20160919.cpp
+d:\dev\fom\c\tankverbrauch_20160919\tankverbrauch_20160919\tankverbrauch_20160919.cpp(12): warning C4477: "scanf_s": Die Formatzeichenfolge "%i" erfordert ein Argument vom Typ "int *", das variadic-Argument "1" weist aber den Typ "float *" auf.
+d:\dev\fom\c\tankverbrauch_20160919\tankverbrauch_20160919\tankverbrauch_20160919.cpp(15): warning C4477: "scanf_s": Die Formatzeichenfolge "%i" erfordert ein Argument vom Typ "int *", das variadic-Argument "1" weist aber den Typ "float *" auf.
+d:\dev\fom\c\tankverbrauch_20160919\tankverbrauch_20160919\tankverbrauch_20160919.cpp(10): warning C4101: "fVerbrauch": Unreferenzierte lokale Variable
+  Tankverbrauch_20160919.vcxproj -> D:\DEV\FOM\C\Tankverbrauch_20160919\Debug\Tankverbrauch_20160919.exe
+  Tankverbrauch_20160919.vcxproj -> D:\DEV\FOM\C\Tankverbrauch_20160919\Debug\Tankverbrauch_20160919.pdb (Full PDB)
