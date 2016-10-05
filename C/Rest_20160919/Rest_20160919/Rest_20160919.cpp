@@ -6,12 +6,22 @@
 
 int main()
 {
-	float iSek;
+	int iSek;
+	int iSek2, iMin, iStd, iDay;
 
 	printf("Gib Sekunden ein: \n");
 	scanf_s("%i", &iSek);
 
-	printf("Noch %f Sekunden, noch %f Minuten, noch %f Stunden\n", (24*60*60)%(iSek), (24*60)%(iSek/60), 24%(iSek/60/60));
+	iDay = iSek / (24*60*60);
+	iSek = iSek % (24*60*60);
+
+	iStd = iSek / (60*60);
+	iSek = iStd % (60*60);
+
+	iMin = iSek / 60;
+	iSek = iSek % 60;
+
+	printf("Noch %i Sekunden, noch %i Minuten, noch %i Stunden, noch %i Tage\n", iSek, iMin, iStd, iDay);
     return 0;
 }
 

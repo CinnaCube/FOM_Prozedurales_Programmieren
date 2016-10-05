@@ -1,0 +1,5 @@
+﻿  3_07_20160926.cpp
+d:\dev\fom\prozedurales programmieren\c\3_07_20160926\3_07_20160926\3_07_20160926.cpp(10): error C2062: "int"-Typ unerwartet
+d:\dev\fom\prozedurales programmieren\c\3_07_20160926\3_07_20160926\3_07_20160926.cpp(11): error C2065: "i1": nichtdeklarierter Bezeichner
+d:\dev\fom\prozedurales programmieren\c\3_07_20160926\3_07_20160926\3_07_20160926.cpp(11): error C2065: "i2": nichtdeklarierter Bezeichner
+d:\dev\fom\prozedurales programmieren\c\3_07_20160926\3_07_20160926\3_07_20160926.cpp(11): error C2065: "i3": nichtdeklarierter Bezeichner
