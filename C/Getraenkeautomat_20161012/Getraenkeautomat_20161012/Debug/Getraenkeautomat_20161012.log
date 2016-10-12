@@ -1,0 +1,7 @@
+﻿  Getraenkeautomat_20161012.cpp
+d:\dev\fom\prozedurales programmieren\c\getraenkeautomat_20161012\getraenkeautomat_20161012\getraenkeautomat_20161012.cpp(18): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+d:\dev\fom\prozedurales programmieren\c\getraenkeautomat_20161012\getraenkeautomat_20161012\getraenkeautomat_20161012.cpp(21): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+d:\dev\fom\prozedurales programmieren\c\getraenkeautomat_20161012\getraenkeautomat_20161012\getraenkeautomat_20161012.cpp(24): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+d:\dev\fom\prozedurales programmieren\c\getraenkeautomat_20161012\getraenkeautomat_20161012\getraenkeautomat_20161012.cpp(41): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+  Getraenkeautomat_20161012.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\Getraenkeautomat_20161012\Debug\Getraenkeautomat_20161012.exe
+  Getraenkeautomat_20161012.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\Getraenkeautomat_20161012\Debug\Getraenkeautomat_20161012.pdb (Full PDB)

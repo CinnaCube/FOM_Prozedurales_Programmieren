@@ -1,0 +1,4 @@
+﻿  Fakultät_20161012.cpp
+d:\dev\fom\prozedurales programmieren\c\fakultät_20161012\fakultät_20161012\fakultät_20161012.cpp(17): warning C4477: "printf": Die Formatzeichenfolge "%.0f" erfordert ein Argument vom Typ "double", das variadic-Argument "1" weist aber den Typ "long" auf.
+  Fakultät_20161012.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\Fakultät_20161012\Debug\Fakultät_20161012.exe
+  Fakultät_20161012.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\Fakultät_20161012\Debug\Fakultät_20161012.pdb (Full PDB)

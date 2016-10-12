@@ -1,0 +1,4 @@
+﻿  Max_Header_20161012.cpp
+d:\dev\fom\prozedurales programmieren\c\max_header_20161012\max_header_20161012\max_header_20161012.cpp(9): warning C4101: "fZahl2": Unreferenzierte lokale Variable
+  Max_Header_20161012.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\Max_Header_20161012\Debug\Max_Header_20161012.exe
+  Max_Header_20161012.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\Max_Header_20161012\Debug\Max_Header_20161012.pdb (Full PDB)
