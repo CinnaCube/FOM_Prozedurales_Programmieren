@@ -1,0 +1,4 @@
+﻿  aufgaben.cpp
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(7): warning C4101: "iGGT": Unreferenzierte lokale Variable
+  BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.exe
+  BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.pdb (Full PDB)
