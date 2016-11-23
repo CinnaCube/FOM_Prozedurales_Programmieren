@@ -6,5 +6,7 @@ d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(116): warning C4101
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(117): warning C4101: "alArray": Unreferenzierte lokale Variable
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(115): warning C4101: "aiArray": Unreferenzierte lokale Variable
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(118): warning C4101: "adArray": Unreferenzierte lokale Variable
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(201): warning C4838: Konvertierung von "double" zu "float" erfordert eine einschränkende Konvertierung
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(201): warning C4305: "Initialisierung": Verkürzung von "double" in "float"
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.exe
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.pdb (Full PDB)

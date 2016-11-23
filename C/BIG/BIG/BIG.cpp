@@ -43,6 +43,18 @@ int main()
 		case 602:
 			a602_start();
 			break;
+		case 603:
+			a603_start();
+			break;
+		case 604:
+			a604_start();
+			break;
+		case 6042:
+			a604_klausuraufgabe();
+			break;
+		case 607:
+			a607_start();
+			break;
 		default:
 			printf("Diese Aufgabe ist nicht implementiert!\n");
 			break;

@@ -122,3 +122,91 @@ void a602_start() {
 	printf("float : %d Bytes\n", sizeof(afArray));
 	printf("double : %d Bytes\n", sizeof(adArray));
 }
+
+void a603_start() {
+	int aiArray[10] = {5,4,3,5,6,7,4,3,50,1};
+	int iZaehler, iInnen, iHash;
+	for (iZaehler = 0; iZaehler < 9; iZaehler++) {
+		/*
+		NICHT OPTIMIERT
+		for (iInnen = 0; iInnen < 9; iInnen++) {
+		*/
+		for (iInnen = 0; iInnen < 9-iZaehler; iInnen++) {
+			if (aiArray[iInnen] > aiArray[iInnen + 1]) {
+				iHash = aiArray[iInnen + 1];
+				aiArray[iInnen + 1] = aiArray[iInnen];
+				aiArray[iInnen] = iHash;
+			}
+		}
+	}
+
+	printf("Die Zahlenfolge ist: \n");
+	for (iZaehler = 0; iZaehler < 10; iZaehler++) {
+		printf("Stelle %d, %d\n", iZaehler, aiArray[iZaehler]);
+	}
+}
+
+void a604_start() {
+	int aiPaare[][2] = { {1,2},{3,4},{5,6},{7,8},{9,10} };
+
+	for (int i = 0; i < 5; i++) {
+		printf("Erste Dimension Stelle %d: Werte %d und %d und Produkt %d\n",i,aiPaare[i][0],aiPaare[i][1], aiPaare[i][0]*aiPaare[i][1]);
+	}
+}
+void a604_klausurAusgabe(int aiArray[8][8]) {
+	printf("\n");
+	for (int i = 0; i < 8; i++) {
+		for (int j = 0; j < 8; j++) {
+			printf("|%d", aiArray[i][j]);
+		}
+		printf("\n");
+	}
+}
+void a604_klausuraufgabe() {
+	int aiArray[8][8] = { 0 };
+	int aiArray1[8][8] = { 0 };
+	int aiArray2[8][8] = { 0 };
+	int aiArray3[8][8] = { 0 };
+
+	int *piZeiger = &aiArray3[0][0];
+
+	for (int i = 0; i < 8; i++) {
+		aiArray[i][i] = 1;
+	}
+	a604_klausurAusgabe(aiArray);
+
+	for (int i = 0; i < 8; i++) {
+		aiArray1[i][7-i] = 1;
+	}
+	a604_klausurAusgabe(aiArray1);
+
+	//jede zweite zeile 1
+	for (int i = 0; i < 8; i+=2) {
+		for (int j = 0; j < 8; j++) {
+			aiArray2[i][j] = 1;
+		}
+	}
+	a604_klausurAusgabe(aiArray2);
+
+	//mit Zeigerarythmetik
+	for (int i = 0; i < 8; i++) {
+		*piZeiger = 1;
+		piZeiger += 8 + 1;
+	}
+	a604_klausurAusgabe(aiArray3);
+}
+
+void a607_start() {
+	int aiArray[10] = { 0,1,2,3,4,5,6,7,8,9 };
+	float afArray[10] = {.0,.1,.2,.3,.4,.5,.6,.7,.8,.9};
+
+	int *piZeiger;
+	float *pfZeiger;
+
+	piZeiger = &aiArray[0];
+	pfZeiger = &afArray[0];
+
+	for (int i = 0; i < 10; i++) {
+		printf("%d und %.1f\n",*piZeiger++,*pfZeiger++);
+	}
+}
