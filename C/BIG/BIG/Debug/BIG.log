@@ -1,12 +1,14 @@
 ﻿  aufgaben.cpp
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(9): warning C4101: "iGGT": Unreferenzierte lokale Variable
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(63): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(67): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(116): warning C4101: "afArray": Unreferenzierte lokale Variable
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(117): warning C4101: "alArray": Unreferenzierte lokale Variable
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(115): warning C4101: "aiArray": Unreferenzierte lokale Variable
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(118): warning C4101: "adArray": Unreferenzierte lokale Variable
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(201): warning C4838: Konvertierung von "double" zu "float" erfordert eine einschränkende Konvertierung
-d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(201): warning C4305: "Initialisierung": Verkürzung von "double" in "float"
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(11): warning C4101: "iGGT": Unreferenzierte lokale Variable
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(65): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(69): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(118): warning C4101: "afArray": Unreferenzierte lokale Variable
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(119): warning C4101: "alArray": Unreferenzierte lokale Variable
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(117): warning C4101: "aiArray": Unreferenzierte lokale Variable
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(120): warning C4101: "adArray": Unreferenzierte lokale Variable
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(203): warning C4838: Konvertierung von "double" zu "float" erfordert eine einschränkende Konvertierung
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(203): warning C4305: "Initialisierung": Verkürzung von "double" in "float"
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(242): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(265): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.exe
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.pdb (Full PDB)

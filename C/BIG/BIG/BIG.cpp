@@ -55,6 +55,15 @@ int main()
 		case 607:
 			a607_start();
 			break;
+		case 608:
+			a608_start();
+			break;
+		case 6092:
+			a6092_start();
+			break;
+		case 8:
+			a8_start();
+			break;
 		default:
 			printf("Diese Aufgabe ist nicht implementiert!\n");
 			break;

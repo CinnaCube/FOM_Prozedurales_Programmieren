@@ -1,5 +1,7 @@
 #include "aufgaben.h"
 #include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
 #define _USE_MATH_DEFINES // for C
 #include <math.h>
 
@@ -209,4 +211,65 @@ void a607_start() {
 	for (int i = 0; i < 10; i++) {
 		printf("%d und %.1f\n",*piZeiger++,*pfZeiger++);
 	}
+}
+//gehoert zu 608
+int berechneProdukt(int aiFeld[], int iLaenge) {
+	int iCount;
+	int iProdukt = 1;
+	for (iCount = 0; iCount < iLaenge;iCount++) {
+		iProdukt *= aiFeld[iCount];
+	}
+	return iProdukt;
+}
+
+void a608_start() {
+	int aiArray[10], iCount;
+	for (iCount = 0; iCount < 10;iCount++) {
+		scanf_s("%i", &aiArray[iCount]);
+	}
+
+	int iErgebnis = berechneProdukt(aiArray, 10);
+
+	printf("Produkt: %i\n", iErgebnis);
+}
+
+float getAverage(int *array, int *groesse) {
+	float fErgebnis;
+	int iSumme=0;
+	for (int iCount = 0; iCount < *groesse; iCount++) {
+		iSumme += *(array + iCount);
+	}
+	fErgebnis = iSumme / *groesse;
+	return fErgebnis;
+}
+
+void a6092_start() {
+	int iLaenge;
+	printf("Laenge des Arrays eingeben:\n");
+	scanf_s("%i", &iLaenge);
+	
+	int *piZeigerAufArray = (int *) calloc(iLaenge, sizeof(int));
+	printf("Werte eingeben:\n");
+	for (int iCount = 0; iCount < iLaenge; iCount++) {
+		scanf_s("%i", piZeigerAufArray + iCount);
+	}
+	float fAverage = getAverage(piZeigerAufArray, &iLaenge);
+
+	printf("Ergebnis: %.2f", fAverage);
+}
+//klausur verketten
+void a8_start() {
+	char test1[100] = "Einigkeit und Recht und Freibier";
+	char test2[100] = "Freiheit";
+	char *pcPointer = test1;
+	for (int iCount = 0; iCount < strlen(test1); iCount++) {
+		if (*pcPointer == 'F') {
+			iCount = strlen(test1);
+		} else {
+			pcPointer++;
+		}
+	}
+	*pcPointer = '\0';
+	strcat_s(test1,test2);
+	printf("%s", test1);
 }

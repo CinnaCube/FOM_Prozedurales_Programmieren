@@ -12,3 +12,7 @@ void a603_start();
 void a604_start();
 void a604_klausuraufgabe();
 void a607_start();
+void a608_start();
+int berechneProdukt(int [], int);
+void a6092_start();
+void a8_start();
