@@ -16,3 +16,8 @@ void a608_start();
 int berechneProdukt(int [], int);
 void a6092_start();
 void a8_start();
+void a803_start();
+void a804_start();
+void a83_start();
+void a807_start();
+void a84_start();

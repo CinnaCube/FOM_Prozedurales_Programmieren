@@ -273,3 +273,92 @@ void a8_start() {
 	strcat_s(test1,test2);
 	printf("%s", test1);
 }
+
+void a803_start() {
+	char *acVornamen[5] = { "Rene", "Thomas", "Max", "Jonas", "Jesus" };
+	char *acNachnamen[5] = {"Kasseboehmer", "Cruell", "Vorwieger", "Betha", "Heilig"};
+
+	char cAusgabe[81];
+
+	int iZahl;
+
+	for (iZahl = 0; iZahl < 5; iZahl++) {
+		strcpy_s(cAusgabe, acVornamen[iZahl]);
+
+		while (strlen(cAusgabe) != 80 - strlen(acNachnamen[iZahl])) {
+			strcat_s(cAusgabe, "_");
+		}
+		strcat_s(cAusgabe, acNachnamen[iZahl]);
+		printf("%s\n", cAusgabe);
+	}
+}
+
+void a804_start() {
+	char sPfad[] = "C:\\Eigene Dateien\\FOM\\804\\main.c";
+
+	char *pcBack = strrchr(sPfad, '\\');
+	char *pcEnd = strrchr(sPfad, '.');
+
+	
+	printf("%s\n", pcEnd + 1);
+	printf("%s\n", pcBack + 1);
+
+	*pcBack = '\0';
+	printf("%s\n", sPfad);
+}
+
+void a82_start() {
+	char saText[] = "Ich bin dein Vater, Duke!";
+
+	char *ptr = strstr(saText, "Duke");
+
+	*ptr = '\0';
+
+	strcat(saText, "Luke!");
+
+	printf("%s", saText);
+}
+
+void a83_start() {
+	char text1[100] = "Moege die Macht doch bleiben wo sie ist!";
+	char text2[100] = " mit euch sein!";
+
+	char *ptr = strstr(text1, " doch bleiben wo sie ist!");
+
+	*ptr = '\0';
+
+	strcat(text1, text2);
+	// oder strcpy(ptr, text2);
+
+	printf("%s\n", text1);
+}
+
+void a807_start() {
+	char string[] = "Paris 111,Berlin 6,London 16,Rom 28";
+	char *ptr = strtok(string, ",");
+	int iSumme = 0;
+
+	while (ptr!=NULL) {
+		ptr = strchr(ptr, ' ');
+		iSumme += atoi(ptr);
+		ptr = strtok(NULL, ",");
+		
+	}
+	printf("Summe ist: %i\n", iSumme);
+	
+}
+
+void a84_start() {
+	char string[] = "15.06.2012#08:15:00#Zahnarzttermin#privat";
+	char *ptr = strtok(string, "#");
+
+	printf("Aufgabe:\nDatum: %s\n", ptr);
+	ptr = strtok(NULL, "#");
+	char *ptr2 = strrchr(ptr, ':');
+	*ptr2 = '\0';
+	printf("Uhrzeit: %s\n", ptr);
+	ptr = strtok(NULL, "#");
+	printf("Termin: %s\n", ptr);
+	ptr = strtok(NULL, "#");
+	printf("Typ: %s\n", ptr);
+}

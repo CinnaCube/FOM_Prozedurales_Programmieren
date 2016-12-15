@@ -64,6 +64,21 @@ int main()
 		case 8:
 			a8_start();
 			break;
+		case 803:
+			a803_start();
+			break;
+		case 804:
+			a804_start();
+			break;
+		case 83:
+			a83_start();
+			break;
+		case 807:
+			a807_start();
+			break;
+		case 84:
+			a84_start();
+			break;
 		default:
 			printf("Diese Aufgabe ist nicht implementiert!\n");
 			break;
