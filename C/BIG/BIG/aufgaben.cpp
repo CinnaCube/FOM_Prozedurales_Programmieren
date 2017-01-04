@@ -362,3 +362,118 @@ void a84_start() {
 	ptr = strtok(NULL, "#");
 	printf("Typ: %s\n", ptr);
 }
+
+void a901_start() {
+	struct spender {
+		float betrag;
+		char vorname[30];
+		char nachname[30];
+	};
+
+	struct spender einSpender;
+	//char* einlesen = einSpender.vorname;
+	printf("Vorname eingeben:\n");
+	scanf("%s", einSpender.vorname);
+	printf("Nachname eingeben:\n");
+	scanf("%s", einSpender.nachname);
+	printf("Betrag eingeben:\n");
+	scanf("%f", &einSpender.betrag);
+
+	//strcpy_s(einSpender.vorname, einlesen);
+
+	printf("vorname: %s, nachname: %s, betrag: %f\n", einSpender.vorname, einSpender.nachname, einSpender.betrag);
+}
+
+void a902_start() {
+	struct kunde {
+		char name[30];
+		char vorname[30];
+	};
+
+	struct rechnung {
+		struct kunde kundeninfos;
+		float rechnungsbretag;
+	};
+
+	struct rechnung Rechnung1;
+
+	printf("Name eingeben:\n");
+	scanf("%s", Rechnung1.kundeninfos.name);
+	printf("Vorname eingeben:\n");
+	scanf("%s", Rechnung1.kundeninfos.vorname);
+	printf("Betrag eingeben:\n");
+	scanf("%f", &Rechnung1.rechnungsbretag);
+
+	printf("Daten: \n Name: %s\n Vorname: %s\n Betrag: %f", Rechnung1.kundeninfos.name, Rechnung1.kundeninfos.vorname, Rechnung1.rechnungsbretag);
+}
+
+struct spender {
+	float betrag;
+	char vorname[30];
+	char nachname[30];
+};
+
+void einlesen_a903(struct spender* x) {
+	printf("Vorname eingeben:\n");
+	scanf("%s", x->vorname);
+	printf("Nachname eingeben:\n");
+	scanf("%s", x->nachname);
+	printf("Betrag eingeben:\n");
+	scanf("%f", &x->betrag);
+}
+
+void ausgeben_a903(struct spender x) {
+	printf("vorname: %s, nachname: %s, betrag: %f\n", x.vorname, x.nachname, x.betrag);
+}
+
+void a903_start() {
+	struct spender einSpender;
+	einlesen_a903(&einSpender);
+	ausgeben_a903(einSpender);
+}
+struct fahrzeug {
+	float preis;
+	char hersteller[30];
+	char modell[30];
+};
+
+//KLausuraufgabe
+void einlesen_a9032(struct fahrzeug* x) {
+	printf("hersteller eingeben:\n");
+	scanf("%s", x->hersteller);
+	printf("modell eingeben:\n");
+	scanf("%s", x->modell);
+	printf("preis eingeben:\n");
+	scanf("%f", &x->preis);
+}
+
+void ausgeben_a9032(struct fahrzeug x) {
+	printf("hersteller: %s, modell: %s, preis: %f\n", x.hersteller, x.modell, x.preis);
+}
+
+void a9032_start() {
+	struct fahrzeug einAuto;
+	einlesen_a9032(&einAuto);
+	ausgeben_a9032(einAuto);
+}
+
+struct person {
+	char* vorname;
+	char* nachname;
+	int alter;
+};
+
+//Klausuraufgabe
+void a9042_start() {
+	struct person daten[] = { {"Vin","Diesel", 48},
+	{"Jason","Statham", 48},{"Jet","Li",52} };
+
+	struct person* pPerson;
+	
+	pPerson = daten;
+
+	for (int i = 0; i <= 2; i++) {
+		printf("%s %s, %i\n", pPerson->vorname, pPerson->nachname, pPerson->alter);
+		pPerson++;
+	}
+}

@@ -21,3 +21,8 @@ void a804_start();
 void a83_start();
 void a807_start();
 void a84_start();
+void a901_start();
+void a902_start();
+void a903_start();
+void a9032_start();
+void a9042_start();

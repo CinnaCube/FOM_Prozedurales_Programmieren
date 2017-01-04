@@ -79,6 +79,21 @@ int main()
 		case 84:
 			a84_start();
 			break;
+		case 901:
+			a901_start();
+			break;
+		case 902:
+			a902_start();
+			break;
+		case 903:
+			a903_start();
+			break;
+		case 9032:
+			a9032_start();
+			break;
+		case 9042:
+			a9042_start();
+			break;
 		default:
 			printf("Diese Aufgabe ist nicht implementiert!\n");
 			break;
