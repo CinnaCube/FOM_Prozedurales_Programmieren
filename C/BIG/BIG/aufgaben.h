@@ -26,3 +26,8 @@ void a902_start();
 void a903_start();
 void a9032_start();
 void a9042_start();
+void a1001_start();
+void a1002_start();
+void a1003_start();
+void a10032_start();
+void a1004_start();

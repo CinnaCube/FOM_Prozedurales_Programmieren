@@ -10,5 +10,8 @@ d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(203): warning C4838
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(203): warning C4305: "Initialisierung": Verkürzung von "double" in "float"
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(242): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(265): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(547): warning C4101: "ausgabe": Unreferenzierte lokale Variable
+  BIG.cpp
+  Code wird generiert...
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.exe
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.pdb (Full PDB)

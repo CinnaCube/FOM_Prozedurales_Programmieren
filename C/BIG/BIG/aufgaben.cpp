@@ -477,3 +477,96 @@ void a9042_start() {
 		pPerson++;
 	}
 }
+
+void a1001_start() {
+	FILE* file1 = fopen(".\\dateien\\1001.txt", "w");
+
+	if (file1==NULL) {
+		printf("Datei konnte nicht geoeffnet werden!\n");
+	} else {
+		printf("Datei konnte geoeffnet werden!\n");
+
+		fclose(file1);
+		printf("Datei geschlossen!\n");
+	}
+}
+
+void a1002_start() {
+	FILE* file1 = fopen(".\\dateien\\1002.txt", "w");
+	int array1[5] = {1,2,3,4,5};
+	int array2[5];
+	int i = 0, itemp;
+
+	if (file1 == NULL) {
+		printf("Datei konnte nicht geoeffnet werden!\n");
+	} else {
+		printf("Datei konnte geoeffnet werden!\n");
+		for (i = 0; i < 5; i++) {
+			fprintf(file1, "%i\n", array1[i]);
+		}
+
+		fclose(file1);
+		printf("Datei geschlossen!\n");
+	}
+
+	file1 = fopen(".\\dateien\\1002.txt", "r");
+	i = 0;
+	while (fscanf(file1,"%i",&itemp)!=EOF) {
+		array2[i] = itemp;
+		printf("zeile %i:%i\n",i+1, itemp);
+		i++;
+	}
+	fclose(file1);
+}
+
+void a1003_start() {
+	FILE* file1 = fopen(".\\dateien\\log.csv", "r");
+	char datum[11];
+	char uhrzeit[6];
+	char login[30];
+
+
+	if (file1 == NULL) {
+		printf("Datei konnte nicht geoeffnet werden!\n");
+	} else {
+		printf("Datei konnte geoeffnet werden!\n");
+		
+		while (fscanf(file1, "%10s,%5s,%s", &datum, &uhrzeit, &login) != EOF) {
+			printf("Datum:\t%s\nUhrzeit:\t%s Uhr\nLogin:\t%s\n", datum, uhrzeit, login);
+		}
+
+		fclose(file1);
+		printf("Datei geschlossen!\n");
+	}
+}
+//KLausuraufgabe
+void a10032_start() {
+	FILE* file1 = fopen(".\\dateien\\auto.csv", "r");
+	char zeile[100];
+	char *ptr;
+	char ausgabe[100];
+	float fSumme = 0.0;
+	int Zahl=0;
+
+	while (fscanf(file1, "%s", zeile)!=EOF) {
+		ptr = strtok(zeile, ":");
+		//printf("%s\n", ptr);
+		ptr = strtok(NULL, ":");
+		//printf("%s\n", ptr);
+		fSumme += atoi(ptr);
+		Zahl++;
+	}
+	printf("Durchschnitt: %.2f", fSumme/Zahl);
+
+	fclose(file1);
+}
+
+void a1004_start() {
+	FILE *ori = fopen(".\\dateien\\auto.csv", "r"), *cpy = fopen(".\\dateien\\kopie.csv", "w");
+	char puffer[100];
+
+	while (fgets(puffer, 100, ori)) {
+		fputs(puffer, cpy);
+	}
+	fcloseall();
+}
