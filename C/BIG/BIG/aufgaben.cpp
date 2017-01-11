@@ -5,6 +5,13 @@
 #define _USE_MATH_DEFINES // for C
 #include <math.h>
 
+//fuer 1101
+#define ADD(wert1, wert2) ((wert1) + (wert2))
+#define MULT(wert1, wert2) ((wert1) * (wert2))
+//fuer 1102
+#define MAXVALUE(zahl1, zahl2) (((zahl1)>(zahl2))?(zahl1):(zahl2))
+
+
 
 void a404_start()
 {
@@ -569,4 +576,93 @@ void a1004_start() {
 		fputs(puffer, cpy);
 	}
 	fcloseall();
+}
+
+void a1005_start() {
+	//Vom Olli gemacht. Zum üben selber machen.
+	FILE *csv;
+	char puffer[100];
+	char *ptr;
+
+	csv = fopen(".\\dateien\\log.csv", "r");
+
+	while (fgets(puffer, 100, csv)) {
+		ptr = strtok(puffer, ",");
+		printf("IP:%s", ptr);
+		ptr = strtok(NULL, ",");
+		printf("Uhrzeit:%s", ptr);
+		ptr = strtok(NULL, ",");
+		printf("User:%s", ptr);
+	}
+	fclose(csv);
+}
+
+//KLausuraufgabe WICHTIG 20 PUnkte
+void a10052_start() {
+	FILE *datei;
+	char zeile[30];
+	char *ptr;
+	int summe = 0;
+	int groesster = 0;
+	int raumnummer = 0;
+
+	datei = fopen(".\\dateien\\raeume.txt", "r");
+	if (datei == NULL) {
+		printf("Die Datei konnte nicht gefunden werden!");
+	} else {
+		while (fgets(zeile, 30, datei)) {
+			ptr = strrchr(zeile, ',');
+			summe += atoi(ptr+1);
+			if (groesster < atoi(ptr + 1)) {
+				groesster = atoi(ptr + 1);
+				ptr = strtok(zeile, ",");
+				raumnummer = atoi(ptr);
+			}
+		}
+
+		printf("Summe:%i Groesster Raum:%i", summe, raumnummer);
+	}
+
+	fclose(datei);
+}
+
+void a1007_start() {
+	FILE *flatfile;
+	char *ptr;
+	char zeile[100];
+	flatfile = fopen(".\\dateien\\flatFile.txt", "r+");
+	if (flatfile == NULL) {
+		printf("Datei konnte nicht geoeffnet werden!");
+	} else {
+		//Eine Zeile hat 62 Zeichen plus 1 fuer den Zeilenumbruch
+		fseek(flatfile, 63 + 63 + 15, SEEK_SET);
+		fputs("Martina", flatfile);
+		fseek(flatfile, 63 + 63 + 30, SEEK_SET);
+		fputs("m.hill@web.de", flatfile);
+	}
+	fclose(flatfile);
+}
+
+void a1101_start() {
+	int addieren = ADD(1, 3) * ADD(2, 4);
+	printf("%d\n", addieren);
+
+	int multi = MULT(1+2, 5+1);
+	printf("%d\n", multi);
+}
+
+void a1102_start() {
+	int zahlA = 4, zahlB = 7;
+
+	int maxInt = MAXVALUE(zahlA, zahlB);
+
+	printf("Max-Int: %i\n", maxInt);
+
+	//--------------------------------------
+	float zahlX = 12.6, zahlY = 0.8;
+
+	float maxFloat = MAXVALUE(zahlX, zahlY);
+
+	printf("Max-Float: %.1f\n", maxFloat);
+
 }

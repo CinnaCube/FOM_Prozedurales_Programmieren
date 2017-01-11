@@ -31,3 +31,7 @@ void a1002_start();
 void a1003_start();
 void a10032_start();
 void a1004_start();
+void a10052_start();
+void a1007_start();
+void a1101_start();
+void a1102_start();

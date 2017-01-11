@@ -1,0 +1,4 @@
+101,Klassenraum,35
+200,Besprechungsraum,8
+306,Musiksaal,60
+500,Aula,580
