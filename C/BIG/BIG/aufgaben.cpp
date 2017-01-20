@@ -664,5 +664,64 @@ void a1102_start() {
 	float maxFloat = MAXVALUE(zahlX, zahlY);
 
 	printf("Max-Float: %.1f\n", maxFloat);
+}
 
+//KLausurvorbereitungsaufgaben vom 20170120
+void a994_start() {
+	char array[5][4] = { { 'A','B','C','D' },
+						{ 'E','F','G','H' },
+						{ 'I','J','K','L' },
+						{ 'M','N','O','P' },
+						{ 'Q','R','S','T' }, };
+	for (int i = 0; i < 5;i++) {
+		printf("Zeile %i:",i+1);
+		for (int i2 = 0; i2 < 4;i2++) {
+			printf(" %c", array[i][i2]);
+		}
+		printf("\n");
+	}
+}
+
+void a995_start() {
+	char zeile[] = "Artikel:Google Chromecast;Nettopreis:30.50";
+
+	char *ptr;
+
+	ptr = strtok(zeile, ";");
+	ptr = strchr(ptr, ':');
+	ptr++;
+	printf("%s ", ptr);
+	ptr = strtok(NULL, ";");
+	ptr = strchr(ptr, ':');
+	ptr++;
+	printf("%.2f\n", atof(ptr)*1.19);
+}
+
+struct Auto {
+	int ps;
+	char* hersteller;
+	char* modell;
+};
+
+void drucken(struct Auto auto1) {
+	printf("Hersteller: %s\n",auto1.hersteller);
+	printf("Modell: %s\n",auto1.modell);
+	printf("PS: %i\n",auto1.ps);
+}
+void drucken(struct Auto* auto1) {
+	printf("Hersteller: %s\n", auto1->hersteller);
+	printf("Modell: %s\n", auto1->modell);
+	printf("PS: %i\n", auto1->ps);
+}
+
+void a996_start() {
+	
+	struct Auto auto1;
+	auto1.ps = 130;
+	auto1.hersteller = "VW";
+	auto1.modell = "Golf";
+
+	drucken(auto1);
+
+	drucken(&auto1);
 }

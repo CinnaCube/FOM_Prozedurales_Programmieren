@@ -14,7 +14,5 @@ d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(554): warning C4101
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(632): warning C4101: "zeile": Unreferenzierte lokale Variable
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(631): warning C4101: "ptr": Unreferenzierte lokale Variable
 d:\dev\fom\prozedurales programmieren\c\big\big\aufgaben.cpp(662): warning C4305: "Initialisierung": Verkürzung von "double" in "float"
-  BIG.cpp
-  Code wird generiert...
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.exe
   BIG.vcxproj -> D:\DEV\FOM\Prozedurales Programmieren\C\BIG\Debug\BIG.pdb (Full PDB)

@@ -35,3 +35,6 @@ void a10052_start();
 void a1007_start();
 void a1101_start();
 void a1102_start();
+void a994_start();
+void a995_start();
+void a996_start();

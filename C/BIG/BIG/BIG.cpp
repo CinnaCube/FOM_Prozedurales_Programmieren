@@ -121,6 +121,15 @@ int main()
 		case 1102:
 			a1102_start();
 			break;
+		case 994:
+			a994_start();
+			break;
+		case 995:
+			a995_start();
+			break;
+		case 996:
+			a996_start();
+			break;
 		default:
 			printf("Diese Aufgabe ist nicht implementiert!\n");
 			break;
