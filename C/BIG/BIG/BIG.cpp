@@ -130,6 +130,9 @@ int main()
 		case 996:
 			a996_start();
 			break;
+		case 1:
+			l001_start();
+			break;
 		default:
 			printf("Diese Aufgabe ist nicht implementiert!\n");
 			break;

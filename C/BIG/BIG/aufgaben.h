@@ -38,3 +38,4 @@ void a1102_start();
 void a994_start();
 void a995_start();
 void a996_start();
+void l001_start();

@@ -700,7 +700,7 @@ void a995_start() {
 struct Auto {
 	int ps;
 	char* hersteller;
-	char* modell;
+	char modell[100];
 };
 
 void drucken(struct Auto auto1) {
@@ -719,9 +719,24 @@ void a996_start() {
 	struct Auto auto1;
 	auto1.ps = 130;
 	auto1.hersteller = "VW";
-	auto1.modell = "Golf";
+	//auto1.modell = "Golf";
+	strcpy(auto1.modell, "Golf");
 
 	drucken(auto1);
 
 	drucken(&auto1);
+}
+
+void l001_start() {
+	int i = 12, i2 = 21, i3 = 5;
+
+	i = i << 1;
+	i2 = i2 << 1;
+	i3 = i3 << 1;
+
+	printf("%i,%i,%i\n", i,i2,i3);
+
+	i = 16;
+	i %= 5;
+	printf("%i\n", i);
 }
